@@ -1,0 +1,237 @@
+/*-------------------------------- Start SideBar --------------------------------*/
+.show-sidebar{
+  display: none;
+  position: fixed;
+  z-index: 7;
+  &.clicked{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  @include maxDm{
+    background: #4b4d50;
+    display: block;
+    text-align: center;
+    padding-left: 5px;
+    cursor: pointer;
+    img{
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+      margin-bottom: 2px;
+      width: 18px;
+    }
+  };
+  @include maxMob{
+    top: 270px;
+    left: -2px;
+    padding-left: 5px;
+    img{
+      margin-bottom: 2px;
+      width: 18px;
+    }
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    &.clicked{
+      left: 65%;
+    }
+  };
+  @include btSm{
+    top: 270px;
+    left: -2px;
+    img{
+      width: 18px;
+    }
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    &.clicked{
+      left:320px;
+    }
+  };
+  @include btDm{
+    top: 270px;
+    left: -2px;
+    img{
+      width: 18px;
+    }
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    &.clicked{
+      left: 320px;
+    }
+  };
+}
+.menu-sidebar{
+  width: 312px;
+  height: 100%;
+  @include maxDm{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 6;
+    &.clicked{
+      background-color: rgba(#000,0.4);
+      display: block;
+      .menu-sidebar__content{
+          left: 0;
+      }
+    }
+    .menu-sidebar__content{
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-color: #4b4d50;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      &.clicked{
+        left: 0;
+      }
+    }
+    .show-sidebar{
+      background: #4b4d50;
+      display: block;
+      text-align: center;
+      position: absolute;
+      padding-left: 5px;
+      cursor: pointer;
+      img{
+        -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+        margin-bottom: 2px;
+        width: 18px;
+      }
+    }
+  };
+  @include maxMob{
+    .menu-sidebar__content{
+      width: 65%;
+      left: -65%;
+    }
+    .show-sidebar{
+      top: 70px;
+      right: -32px;
+      padding-left: 5px;
+      img{
+        margin-bottom: 2px;
+        width: 18px;
+      }
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+    }
+  };
+  @include btSm{
+    .menu-sidebar__content{
+      width: 320px;
+      left: -320px;
+    }
+    .show-sidebar{
+      top: 112px;
+      right: -36px;
+      img{
+        width: 18px;
+      }
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+  };
+  @include btDm{
+    .menu-sidebar__content{
+      width: 320px;
+      left: -320px;
+    }
+    .show-sidebar{
+      top: 112px;
+      right: -36px;
+      img{
+        width: 18px;
+      }
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+  };
+  @include btLgXl{
+    width: 250px;
+  };
+  .logo{
+    padding: 31px 0;
+    @include maxMob{
+      padding: 10px 20px;
+    }
+    img{
+      width: 134px;
+      @include maxMob{
+        width: 70px;
+      };
+      @include btSm{
+        width: 100px;
+      }
+      @include btDm{
+        width: 115px;
+      };
+      @include btLgXl{
+        width: 90px;
+      }
+      @include btXXl{
+        width: 120px;
+      }
+    }
+  }
+  .navbar-sidebars ul{
+    li{
+      padding: 0;
+      font-size: 14px;
+      font-weight: normal;
+      @include maxMob{
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+      @include btSm{
+        font-size: 16px;
+      }
+      @include btDm{
+        font-size: 16px;
+      };
+      a{
+        display: inline-block;
+        width: 100%;
+        padding:19px 30px;
+        color: #ffffff;
+        border-left: 4px solid transparent;
+        span{
+          margin-left: 16px;
+        }
+      }
+      img{
+        margin-bottom: 5px;
+        width: 16px;
+        @include maxMob{
+          width: 12px;
+        };
+        @include btSm{
+          width: 14px;
+        }
+        @include btLgXl{
+          width: 14px;
+        }
+      }
+      @include maxMob{
+        border-width: 4px;
+      };
+      @include btLgXl{
+        border-width: 4px;
+      }
+      &.active a{
+        border-color: $babyBlue;
+      }
+      &.active, &:hover{
+        background-color: rgba($main-gray, 0.3);
+      }
+    }
+  }
+}
+/*---------------------------------- End SideBar --------------------------------*/

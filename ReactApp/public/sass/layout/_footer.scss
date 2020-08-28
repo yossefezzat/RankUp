@@ -1,0 +1,116 @@
+.footer{
+  padding: 0;
+  background: url('../images/footer-back.jpg') center top no-repeat fixed;
+  @extend %cover;
+  color: #fff;
+  margin-top: 100px;
+  .footer-back{
+    padding: 90px 0 0px;
+    background-color: rgba($main-gray,0.95);
+  }
+  .site-logo{
+    span{
+      color: $main-yellow;
+      font-size: 71px;
+    }
+  }
+  .links{
+    margin-top: 70px;
+    h5{
+      margin-bottom: 55px;
+    }
+    li{
+      a{
+        color: #d1d1d1;
+      }
+    }
+    .pages{
+      li a{
+        padding: 8px 0;
+        display: inline-block;
+        @include animate(transform,220ms);
+        &:hover{
+          @include trans(translateX(5px));
+        }
+      }
+    }
+    .schedule{
+      li{
+        color: #AAAAAA;
+        padding: 8px 0;
+        span{
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+      .email{
+        margin-top: 30px;
+        h6{
+          font-weight: 600;
+        }
+        p{
+          color: #aaa;
+        }
+      }
+    }
+    .instagram{
+      .row >div{
+        padding: 0 10px;
+      }
+      .image{
+        position: relative;
+        // border-radius: 10px;
+        overflow: hidden;
+        margin: 10px 0;
+        border: 1px solid rgba(255,255,255,0.4);
+        .overlay{
+          background-color: rgba(#000,0.05);
+          .link{
+            @include animate(all,320ms);
+            display: none;
+            line-height: 75px;
+            text-align: center;
+            img{
+              width: 50%;
+            }
+          }
+          &:hover{
+            background-color: rgba(#000,0.8);
+            .link{
+              display: block;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .social-icon{
+      margin-bottom: 30px;
+      li{
+        a{
+          color: #fff;
+          background-color: transparent;
+          span{
+            font-size: 20px;
+          }
+          &:hover{
+            @include trans(translateY(-5px));
+          }
+        }
+      }
+    }
+  }
+  .conclusion{
+    text-transform: capitalize;
+    background-color: #1d1d1d;
+    margin: 0;
+    padding: 16px 0 12px;
+    font-size: 14px;
+  }
+  .tail{
+  }
+
+}
+.home .footer{
+  margin-top: 0px;
+}

@@ -1,0 +1,54 @@
+// Colours
+$main-yellow:  #ffe005;
+$main-gray:    #202020;
+$main-fgray:   #3f3f3f;
+$main-tGray:   #525252;
+$main-lGray:   #6a6a6a;
+$main-llGray:  #8c8c8c;
+$main-red: #FF3232;
+
+// Blue
+$dBlue: #2F2E41;
+$babyBlue: #00ADB5;
+$links: #0059AB;
+
+// Gray
+$alW: #F9F9F9;
+$llGray: #E1E1E1;
+$lGray: #9FA2B4;
+$mlGray: #707070;
+$mGray: #252733;
+$mmGray: #505050;
+$sideBar: #363740;
+
+// Classes
+$classA: #6C63FF;
+$classB: #2196F3;
+$classC: #69F0AE;
+
+
+// States
+$active: #03BF66;
+$hold: #FEC400;
+$closed: #363740;
+
+
+// Placeholders
+%lightShadow{
+  box-shadow:  0 1px 6px #ccc;
+}
+%mainShadow{
+  box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 1px 3px rgba(0,0,0,.18);
+}
+%box-shadow{
+  box-shadow: 0 -5px 10px 2px #ccc;
+}
+%shadow{
+  box-shadow: 0 1px 7px 0 rgba(#000,0.2);
+}
+%cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

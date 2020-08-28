@@ -1,0 +1,26 @@
+/* ---------------------------------- Start 404 -------------------------------*/
+.page-404{
+  .content-area{
+    padding-top: 80px;
+    min-height: 92vh;
+    .page-head{
+      .e-heading{
+        font-size: 120px;
+        color: $lGray;
+      }
+      p{
+        font-size: 14px;
+        color: $mlGray;
+      }
+      .feed-button{
+        margin-top: 20px;
+        a{
+          font-size: 14px;
+          height: auto;
+          padding: 5px 25px 5px;
+        }
+      }
+    }
+  }
+}
+/* ---------------------------------- End 404 -------------------------------*/

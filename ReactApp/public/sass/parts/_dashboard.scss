@@ -1,0 +1,76 @@
+/* ---------------------------- Start Dashboard ---------------------------- */
+.dashboard{
+  .jobs-display{
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid $llGray;
+    border-radius: 8px;
+    padding: 20px 0 0;
+    .head{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 22px;
+      margin-bottom: 20px;
+      h5{
+        font-weight: 700;
+      }
+      a{
+        color: $mGray;
+        font-weight: 600;
+      }
+    }
+    .table{
+      margin-bottom: 0;
+      th, td{
+        padding-left: 30px;
+      }
+      thead tr{
+        border-bottom: 2px solid $llGray;
+      }
+      tbody{
+        tr{
+          border-bottom: 1px solid $llGray;
+          cursor: pointer;
+          &:last-of-type{
+            border-bottom: 0;
+          }
+          &:hover{
+            background-color: $alW;
+          }
+        }
+        td, th{
+          font-weight: 500;
+          padding: 22px 30px 20px;
+          span{
+            font-size: 14px;
+            color: $lGray;
+          }
+          h6{
+            margin-bottom: 4px;
+          }
+        }
+      }
+      .title{
+
+      }
+    }
+  }
+  .addnewjob{
+    text-align: right;
+    margin-top: 52px;
+    a{
+      font-weight: 600;
+      color: $dBlue;
+      &:hover{
+        color: $dBlue;
+      }
+      span{
+        font-size: 22px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+}
+
+/* ---------------------------- End Dashboard ---------------------------- */

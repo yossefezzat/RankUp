@@ -1,0 +1,135 @@
+// Normal Mixins
+@mixin animate($value, $time) {
+ -webkit-transition: #{$value} #{$time} ease-in-out;
+ transition:#{$value} #{$time} ease-in-out;
+}
+@mixin trans($value) {
+ -webkit-transform: #{$value};
+ transform: #{$value};
+}
+@mixin circleIt($value) {
+ width: #{$value};
+ height: #{$value};
+ border-radius: 50%;
+ overflow: hidden;
+}
+@mixin border($value,$place) {
+ @if ( $place == 'all') {
+   border: #{$value} solid rgba(#eee,0.6);
+ }
+ @else{
+   border-#{$place}: #{$value} solid rgba(#eee,0.6);
+ }
+}
+
+//Media Queries
+@mixin maxMob {
+  @media (max-width: 575px){
+    @content;
+  }
+}
+
+@mixin minSm {
+  @media (min-width: 576px){
+    @content;
+  }
+}
+@mixin maxSm {
+  @media (max-width: 767px){
+    @content;
+  }
+}
+@mixin btSm {
+  @media (min-width:576px) and (max-width: 767px){
+    @content;
+  }
+}
+
+@mixin minDm {
+  @media (min-width: 768px){
+    @content;
+  }
+}
+@mixin maxDm {
+  @media (max-width: 991px){
+    @content;
+  }
+}
+@mixin btDm {
+  @media (min-width:768px) and (max-width: 991px){
+    @content;
+  }
+}
+@mixin btDmLg{
+  @media (min-width:768px) and (max-width: 1199px){
+    @content;
+  }
+}
+
+@mixin minLg {
+  @media (min-width: 992px){
+    @content;
+  }
+}
+@mixin maxLg {
+  @media (max-width: 1199px){
+    @content;
+  }
+}
+@mixin btLg {
+  @media (min-width:992px) and (max-width: 1199px){
+    @content;
+  }
+}
+@mixin btLgXl {
+  @media (min-width:992px) and (max-width: 1440px){
+    @content;
+  }
+}
+
+@mixin minXl{
+  @media (min-width: 1200px){
+    @content;
+  }
+}
+@mixin maxXl {
+  @media (max-width: 1199px){
+    @content;
+  }
+}
+@mixin btXl{
+  @media (min-width:1200px) and (max-width: 1439px){
+    @content;
+  }
+}
+@mixin btXlXXl{
+  @media (min-width:1200px) and (max-width: 1920px){
+    @content;
+  }
+}
+
+@mixin minXXl{
+  @media (min-width: 1440px){
+    @content;
+  }
+}
+@mixin maxXXl {
+  @media (max-width:  1439px){
+    @content;
+  }
+}
+@mixin btXXl{
+  @media (min-width:1440px) and (max-width: 1920px){
+    @content;
+  }
+}
+@mixin maxXXXl {
+  @media (max-width:  1920px){
+    @content;
+  }
+}
+@mixin minXXXl {
+  @media (min-width:  1921px){
+    @content;
+  }
+}

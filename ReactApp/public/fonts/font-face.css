@@ -1,0 +1,121 @@
+/* ------------------------------------ Start Montserrat ------------------------------*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-lightitalic-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-italic-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+       url('./montserrat/montserrat-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-mediumitalic-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+       url('./montserrat/montserrat-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-semibolditalic-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-semibolditalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./montserrat/montserratmontserrat-bolditalic-webfont.woff2') format('woff2'),
+       url('./montserrat/montserrat-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./montserrat/montserrat-extrabold-webfont.woff2') format('woff2'),
+       url('./montserrat/montserrat-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./montserrat/montserrat-extrabolditalic-webfont.woff2') format('woff2'),
+         url('./montserrat/montserrat-extrabolditalic-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+
+}
+/* ------------------------------------ End Montserrat ------------------------------*/
+/* ------------------------------------ Start Cinzel ------------------------------*/
+@font-face {
+    font-family: 'cinzel_decorativeblack';
+    src: url('./cinzeldecorative-black-webfont.woff2') format('woff2'),
+         url('./cinzeldecorative-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cinzel_decorativebold';
+    src: url('./cinzeldecorative-bold-webfont.woff2') format('woff2'),
+         url('./cinzeldecorative-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cinzel_decorativeregular';
+    src: url('./cinzeldecorative-regular-webfont.woff2') format('woff2'),
+         url('./cinzeldecorative-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ------------------------------------ End Cinzel ------------------------------*/

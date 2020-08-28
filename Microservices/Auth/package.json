@@ -1,0 +1,48 @@
+{
+  "name": "Auth-service",
+  "version": "1.0.0",
+  "description": "Authentication service for our rank up microservices project",
+  "main": "service.js",
+  "scripts": {
+    "start": "node ./src/service.js",
+    "prod": "node ./src/service.js",
+    "dev": "DEBUG=server:debug nodemon ./src/service.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwx-amr/RUAuthService.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "JWT",
+    "Mongo"
+  ],
+  "author": "Amr Hussien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwx-amr/RUAuthService/issues"
+  },
+  "homepage": "https://github.com/lwx-amr/RUAuthService#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.1",
+    "helmet": "^3.21.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-json": "^1.0.0",
+    "eslint": "^6.8.0",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
+}

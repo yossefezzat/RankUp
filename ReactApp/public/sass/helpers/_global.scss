@@ -1,0 +1,260 @@
+/* --------------------------- Start Global ---------------------------------*/
+body{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+h1{
+  font-weight: 300;
+}
+a:hover,
+a:focus{
+  text-decoration: none;
+}
+button:focus{
+  outline: 0;
+  background-color: transparent;
+}
+section{
+  padding:100px 0;
+  .section-head{
+    h2{
+      color: $main-gray;
+      // font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+  }
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* --------------------------- End Global ---------------------------------*/
+/* --------------------------- Start Framework ---------------------------------*/
+.req-mark{
+  color: $main-red;
+  position: relative;
+  top: 2px;
+}
+.btn.focus,
+.btn:focus{
+    box-shadow: none;
+}
+.btn{
+  padding: 10px 40px;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.btn-bBlue{
+  background-color: $babyBlue;
+  color: #fff !important;
+  &:hover{
+      color: #fff;
+  }
+}
+.btn-close{
+  color: $mGray;
+  background-color: $llGray;
+  &:hover{
+    color: $mGray
+  }
+}
+.btn-delete{
+  color: #fff;
+  background-color: $main-red;
+  &:hover{
+    color: #fff;
+  }
+}
+.btn-save{
+  color: #fff;
+  background-color: $babyBlue;
+  &:hover{
+    color: #fff;
+  }
+}
+.page-content{
+  position: relative;
+}
+.dashboard{
+  .page-content{
+    margin: 0 30px;
+  }
+}
+.state{
+  & > span{
+    display: inline-block;
+    min-width: 90px;
+    padding: 7px 0px;
+    text-align: center;
+    color: #fff !important;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    &.active{
+      background-color: $active;
+    }
+    &.hold{
+      background-color: $hold;
+    }
+    &.closed{
+      background-color: $closed;
+    }
+  }
+}
+.table{
+  display: table;
+  width: 100%;
+  height: 100%;
+  .table-cell{
+    display: table-cell;
+    vertical-align:middle;
+  }
+}
+.line-bordered::after{
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: $main-yellow;
+  height: 2px;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  @include animate(all,220ms);
+}
+.main-yellow{
+  color: $main-yellow;
+}
+.description{
+  font-size: 18px;
+  letter-spacing: -0.01px;
+  color: $main-lGray;
+  margin: 0;
+}
+.image{
+  img{
+    width: 100%;
+  }
+}
+.no-padding{
+  padding: 0 !important;
+}
+.social-icon{
+  margin-top: 20px;
+  text-align: center;
+  li{
+    display: inline-block;
+    a{
+      color: $main-gray;
+      display: block;
+      margin: 0 6px;
+      background-color: #fff;
+      border-radius: 3px;
+      @include animate(all,220ms);
+      span{
+        display: block;
+        padding: 10px;
+      }
+      &:hover{
+        color: #fff;
+        background-color: $main-gray;
+      }
+    }
+  }
+}
+.get-up-hover{
+  position: relative;
+  overflow: hidden;
+  .text{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    @include animate(transform,220ms);
+    @include trans(translateY(calc(100% + 32px)));
+    .mem-name,.mem-postion{
+      padding-left: 20px;
+    }
+    .mem-name{
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 32px;
+      margin-bottom: 25px;
+      padding-right: 100px;
+      &::before{
+        content: "";
+        width: 50px;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 30px;
+        display: block;
+      }
+    }
+    .mem-postion{
+      padding-right: 50px;
+      color: #e1e1e1;
+      margin-bottom: 30px;
+    }
+  }
+  &:hover{
+    .text{
+      @include trans(translateY(0));
+    }
+  }
+}
+.page-head{
+  padding: 60px 0 100px;
+  h1{
+    font-weight: 500;
+    color: $main-fgray;
+    padding-left: 30px;
+    border-left: 4px solid $main-yellow;
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+.main-page{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: $sideBar;
+  @include maxDm{
+    position: relative;
+  }
+  .menu-sidebar{
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .content-side{
+    min-height: 100vh;
+    background-color: #F7F8FC;
+    width: 100%;
+    @include maxDm{
+      &>div{
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+  .page-content{
+    padding: 40px 0 ;
+    a:hover{
+      color: #fff;
+    }
+  }
+}
+/* -------------------------- End Global -----------------------------*/
